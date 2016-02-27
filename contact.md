@@ -6,7 +6,8 @@ permalink: /contact/
 
 <section class="column-contain">
 	<section class="column">
-		<p>Need a site built? Or a front end developer for a more specific project? If you need to contact me, simply fill out this form and I will get back to you within a few days.</p>
+		<p>Need a site built? Or a front end developer for a more specific project? If you need to contact me, simply fill out this form and I will get back to you within a few days. 
+		</p>
 	</section>
 	<section class="column">
 		<form action="//formspree.io/trentwebdev@gmail.com" method="POST">
