@@ -1,0 +1,28 @@
+---
+layout: post
+title:  Absoft
+date:   2015-11-09 00:00:00 -0800
+categories: portfolio
+image: /images/absoft/absoft-home.jpg
+---
+
+<p>Description of services rendered:<br>
+Assisted with responsive design, update existing forms to more modern specifications, create widget to house form, and integrated existing content with new design.</p>
+
+<ul>
+<li class="full">
+	<a class="thumbnail gallery" href="{{ site.github.url }}/images/absoft/absoft-home.jpg"><img src="{{ site.github.url }}/images/absoft/absoft-home.jpg"></a>
+</li>
+<li>
+	<a class="thumbnail gallery" href="{{ site.github.url }}/images/absoft/absoft-form.jpg"><img src="{{ site.github.url }}/images/absoft/absoft-form.jpg"></a>
+</li>
+<li>
+	<a class="thumbnail gallery" href="{{ site.github.url }}/images/absoft/absoft-table.jpg"><img src="{{ site.github.url }}/images/absoft/absoft-table.jpg"></a>
+</li>
+<li>
+	<a class="thumbnail gallery" href="{{ site.github.url }}/images/absoft/absoft-image.jpg"><img src="{{ site.github.url }}/images/absoft/absoft-image.jpg"></a>
+</li>
+<li>
+	<a class="thumbnail gallery" href="{{ site.github.url }}/images/absoft/absoft-image-2.jpg"><img src="{{ site.github.url }}/images/absoft/absoft-image-2.jpg"></a>
+</li>
+</ul>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+	  {% include footer.html %}
+    </div>
+	<script src="/featherlight_requirements/jquery-1.7.0.min.js"></script>
+	<script src="/featherlight/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/featherlight/featherlight.gallery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+			$(document).ready(function(){
+				$('.gallery').featherlightGallery({
+					gallery: {
+						previous: '«',
+						next: '»',
+						fadeIn: 300,
+						fadeOut: 300
+					},
+					openSpeed:    300,
+					closeSpeed:   300
+				});
+			})
+	</script>
+  </body>
+
+</html>

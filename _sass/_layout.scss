@@ -1,0 +1,375 @@
+/**
+ * Site header
+ */
+.site-header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 11%;
+	height: 100.00%;
+    background-color: $grey-color-dark;
+    min-height: 56px;
+	
+	@include media-query($on-small-screen) {
+		position: relative;
+		width: 100%;
+		height: auto;
+	}
+}
+
+    // Positioning context for the mobile navigation icon
+	// Needs relative
+
+.site-header > .wrapper {
+	margin-left: 0px;
+	padding: $spacing-unit / 2;
+	max-width: none;
+}	
+	
+.site-header > .wrapper > * {
+	width: 100%;
+	
+	@include media-query($on-small-screen) {
+	width: auto;
+	}
+}
+
+.site-title {
+    font-size: 125%;
+    font-weight: 300;
+    line-height: 1.4;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+
+    &,
+    &:visited {
+        color: $grey-color-light;
+    }
+}
+
+.site-title:hover {
+	color: #e8e8e8;
+}
+
+.site-nav {
+    float: right;
+    line-height: 56px;
+	
+	@include media-query($on-small-screen) {
+		line-height: 100%;
+	}
+
+    .menu-icon {
+        display: none;
+    }
+
+    .page-link {
+        color: $text-color-light;
+        line-height: $base-line-height;
+
+        // Gaps between nav items, but not on the last one
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+	
+	.trigger > a {
+		display: block;
+		width: 100%;
+		
+		@include media-query($on-small-screen) {
+		display: inline;
+		}
+		
+		@include media-query($on-palm) {
+		color: #2a7ae2;
+		}
+	}
+
+    @include media-query($on-palm) {
+        position: absolute;
+        top: 9px;
+        right: $spacing-unit / 2;
+		z-index: 1;
+        background-color: $background-color;
+        border: 1px solid $grey-color-light;
+        border-radius: 5px;
+        text-align: right;
+
+        .menu-icon {
+            display: block;
+            float: right;
+            width: 36px;
+            height: 26px;
+            line-height: 0;
+            padding-top: 10px;
+            text-align: center;
+
+            > svg {
+                width: 18px;
+                height: 15px;
+
+                path {
+                    fill: $grey-color-dark;
+                }
+            }
+        }
+
+        .trigger {
+            clear: both;
+            display: none;
+        }
+
+        &:hover .trigger {
+            display: block;
+            padding-bottom: 5px;
+        }
+
+        .page-link {
+            display: block;
+            padding: 5px 10px;
+
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+            margin-left: 20px;
+        }
+    }
+}
+
+/**
+ * Site footer
+ */
+.site-footer {
+    border-top: 1px solid $grey-color-light;
+    padding: $spacing-unit 0;
+}
+
+.footer-heading {
+    font-size: 18px;
+	margin-left: 5%;
+    margin-bottom: $spacing-unit / 2;
+}
+
+.contact-list,
+.social-media-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.footer-col-wrapper {
+    font-size: 15px;
+    color: $grey-color;
+    @extend %clearfix;
+}
+
+.footer-col {
+    float: left;
+    margin-bottom: $spacing-unit / 2;
+    margin-left: 5%;
+	margin-right: 5%;
+}
+
+.footer-col-1 {
+    width: 40%;
+}
+
+.footer-col-2 {
+    width: 40%;
+}
+
+@include media-query($on-laptop) {
+    .footer-col-1,
+    .footer-col-2 {
+        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+        width:         calc(50% - (#{$spacing-unit} / 2));
+    }
+
+    .footer-col-3 {
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+}
+
+@include media-query($on-palm) {
+    .footer-col {
+        float: none;
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+}
+
+
+
+/**
+ * Page content
+ */
+.page-content {
+	width: 89%;
+    padding: $spacing-unit 0;
+	margin-left: 11%;
+	
+	@include media-query($on-small-screen) {
+		width: 100%;
+		margin-left: 0%;
+	}
+}
+
+.page-heading {
+    font-size: 20px;
+}
+
+.post-list {
+    margin-left: 0;
+    list-style: none;
+	@extend %clearfix;
+
+    > li {
+		float: left;
+		width: 40% !important;
+        margin: 0px 5% $spacing-unit !important;
+		padding: 0px !important;
+		
+		> h2 {
+		text-align: center;
+		}
+    }
+	
+	@include media-query($on-small-screen) {
+        > li {
+		float: none;
+		width: 90% !important;
+		
+			> a {
+			max-width: 100%;
+			}
+		}
+		
+    }
+}
+
+.column-contain {
+    margin-left: 0;
+    list-style: none;
+	@extend %clearfix;
+
+    > .column {
+		float: left;
+		width: 40%;
+        margin: 0px 5% $spacing-unit;
+		
+		@include media-query($on-laptop) {
+		width: 90%;
+		}
+		
+		> h2 {
+		text-align: center;
+		}
+    }
+}	
+
+.post-meta {
+    font-size: $small-font-size;
+    color: $grey-color;
+}
+
+.post-link {
+    display: block;
+    font-size: 24px;
+}
+
+/** 
+ *  Contact
+ */
+form label {
+	display: block;
+	text-align: center;
+	}
+
+form input, form textarea {
+	display: block;
+	width: 50%;
+	margin: auto;
+	margin-bottom: 1.25em;
+	}
+	
+form textarea {
+	width: 75%;
+	height: 10em;
+	}
+	
+form input[type="submit"] {
+	width: 25%;
+	
+		@include media-query($on-palm) {
+		width: 35%;
+		}
+	}	
+	
+
+
+/**
+ * Posts
+ */
+.post-header {
+    margin-bottom: $spacing-unit;
+	text-align: center;
+}
+
+.post-title {
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1;
+
+    @include media-query($on-laptop) {
+        font-size: 36px;
+    }
+}
+
+.post-content {
+    margin-bottom: $spacing-unit;
+
+    h2 {
+        font-size: 32px;
+
+        @include media-query($on-laptop) {
+            font-size: 28px;
+        }
+    }
+
+    h3 {
+        font-size: 26px;
+
+        @include media-query($on-laptop) {
+            font-size: 22px;
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+
+        @include media-query($on-laptop) {
+            font-size: 18px;
+        }
+    }
+	
+	li {
+	float: left;
+	width: 45%;
+	padding: 2.5%;
+	list-style: none;
+	
+		@include media-query($on-palm) {
+		width: 100%;
+		padding: 0%;
+		margin-bottom: $spacing-unit;
+		}
+	}
+	
+	li.full {
+	width: 100%;
+	padding: 0%;
+	}
+}
+

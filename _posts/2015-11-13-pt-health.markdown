@@ -1,0 +1,28 @@
+---
+layout: post
+title:  pt Health
+date:   2015-11-13 00:00:00 -0800
+categories: portfolio
+image: /images/pthealth/pt-health-home.jpg
+---
+
+<p>Description of services rendered:<br>
+Assisted with HTML/CSS development to update site to new designs, development for mobile and tablet designs, construction of static landing pages, integration of pop-up form, and day to day html content updates for site pages.</p>
+
+<ul>
+<li class="full">
+	<a class="thumbnail gallery" href="{{ site.github.url }}/images/pthealth/pt-health-home.jpg"><img src="{{ site.github.url }}/images/pthealth/pt-health-home.jpg"></a>
+</li>
+<li>
+	<a class="thumbnail gallery" href="{{ site.github.url }}/images/pthealth/pt-health-map.jpg"><img src="{{ site.github.url }}/images/pthealth/pt-health-map.jpg"></a>
+</li>
+<li>
+	<a class="thumbnail gallery" href="{{ site.github.url }}/images/pthealth/pt-health-clinic.jpg"><img src="{{ site.github.url }}/images/pthealth/pt-health-clinic.jpg"></a>
+</li>
+<li>
+	<a class="thumbnail gallery" href="{{ site.github.url }}/images/pthealth/pt-health-physio.jpg"><img src="{{ site.github.url }}/images/pthealth/pt-health-physio.jpg"></a>
+</li>
+<li>
+	<a class="thumbnail gallery" href="{{ site.github.url }}/images/pthealth/pt-health-coverage.jpg"><img src="{{ site.github.url }}/images/pthealth/pt-health-coverage.jpg"></a>
+</li>
+</ul>

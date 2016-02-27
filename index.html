@@ -1,0 +1,19 @@
+---
+layout: page
+title: Portfolio
+---
+
+<div class="home">
+
+	<ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.github.url }}">{{ post.title }}</a>
+        </h2>
+		<a class="post-link" href="{{ post.url | prepend: site.github.url }}"><img src="{{ post.image }}"></a>
+      </li>
+    {% endfor %}
+	</ul>
+
+</div>
