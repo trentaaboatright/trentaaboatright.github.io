@@ -129,11 +129,8 @@
         .page-link {
             display: block;
             padding: 5px 10px;
-
-            &:not(:last-child) {
-                margin-right: 0;
-            }
-            margin-left: 20px;
+			margin-left: 5px;
+			margin-right: 5px;
         }
     }
 }
